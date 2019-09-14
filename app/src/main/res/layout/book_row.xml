@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/list_linearlayout">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/list_cardview"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:id="@+id/list_relativelayout"
+            >
+
+            <com.joooonho.SelectableRoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_bookposter"
+                android:src="@drawable/openbook"
+                android:scaleType="centerCrop"
+                app:sriv_left_top_corner_radius="0dip"
+                app:sriv_right_top_corner_radius="24dip"
+                app:sriv_left_bottom_corner_radius="0dip"
+                app:sriv_right_bottom_corner_radius="24dip"
+                app:sriv_border_width="2dip"
+                app:sriv_border_color="#fff"
+                android:layout_height="128dp"
+                android:layout_width="88dp"
+                android:layout_margin="1dp"
+                />
+
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_bookposter"-->
+                <!--android:src="@drawable/openbook"-->
+                <!--android:scaleType="fitXY"-->
+                <!--android:layout_height="128dp"-->
+                <!--android:layout_width="88dp"-->
+                <!--android:layout_margin="1dp"-->
+
+                <!--/>-->
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toRightOf="@+id/iv_bookposter"
+                android:fontFamily="@font/oxygen_bold"
+                android:text="Title"
+                android:textSize="24sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toRightOf="@+id/iv_bookposter"
+                android:fontFamily="@font/oxygen"
+                android:text="Author"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_genre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_author"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toRightOf="@+id/iv_bookposter"
+                android:fontFamily="@font/oxygen"
+                android:text="Genre"
+                android:textSize="18sp" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_bookposter"
+                android:layout_below="@id/tv_genre"
+                style="?android:attr/ratingBarStyleSmall"
+                android:theme="@style/MyRatingBar"
+                android:layout_marginLeft="16dp"
+                android:isIndicator="true"
+                android:stepSize="0.1"
+                android:id="@+id/rb_ratingbar"
+                />
+            <!--Style and theme were used to achieve this color-->
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

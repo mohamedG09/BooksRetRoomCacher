@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.AddActivity"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:id="@+id/et_title"
+        android:padding="16dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Author"
+        android:id="@+id/et_author"
+        android:padding="16dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Genre"
+        android:id="@+id/et_genre"
+        android:padding="16dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Image Url"
+        android:id="@+id/et_ImgToUrl"
+        android:padding="16dp"
+        />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_bookposter"
+        android:layout_below="@id/tv_genre"
+        style="?android:attr/ratingBarStyle"
+        android:theme="@style/MyRatingBar"
+        android:stepSize="0.1"
+        android:id="@+id/rb_ratingbarAddActivity"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:isIndicator="false"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:textSize="64sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/et_rating"
+        android:inputType="numberDecimal"
+        android:background="#00000000"
+        />
+
+
+</LinearLayout>
